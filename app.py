@@ -202,17 +202,6 @@ def logout():
     # forget any user_id
     session.clear()
 
-    # Clear all the charts created locally
-    folder = 'static/images'
-    for the_file in os.listdir(folder):
-        file_path = os.path.join(folder, the_file)
-        try:
-            if os.path.isfile(file_path):
-                os.unlink(file_path)
-            #elif os.path.isdir(file_path): shutil.rmtree(file_path)
-        except Exception as e:
-            print(e)
-
     # redirect user to login form
     return redirect(url_for("login"))
 
