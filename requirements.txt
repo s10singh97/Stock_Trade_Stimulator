@@ -7,5 +7,4 @@ requests
 pandas
 numpy
 matplotlib
-socket
 plotly
