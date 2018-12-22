@@ -1,0 +1,11 @@
+Flask
+Flask-Session
+passlib
+SQLAlchemy
+cs50
+requests
+pandas
+numpy
+matplotlib
+socket
+plotly
